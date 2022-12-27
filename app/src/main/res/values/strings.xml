@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ThirdTaskAston</string>
+    <string name="find_image">Найти картинку по URL </string>
+    <string name="add_task">К доп заданию</string>
+    <string name="error_alert">Что-то пошло не так</string>
+    <string name="back_to_act">Назад</string>
+    <string name="not_url_in_edText">Введите ссылку</string>
+    <string name="edText_is_empty">Поле для ввода пустое</string>
+    <string name="exception_from_url">Что-то пошло не так: %1$s</string>
+</resources>

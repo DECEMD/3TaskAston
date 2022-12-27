@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/austria1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/red"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <View
+                android:id="@+id/austria2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/austria1" />
+
+            <View
+                android:id="@+id/austria3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/red"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/austria2" />
+
+            <View
+                android:id="@+id/poland1"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/austria3" />
+
+            <View
+                android:id="@+id/poland2"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/red_and_black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/poland1" />
+
+            <View
+                android:id="@+id/italy1"
+                android:layout_width="0dp"
+                android:layout_height="240dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/green"
+                app:layout_constraintEnd_toStartOf="@id/italy2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/poland2" />
+
+            <View
+                android:id="@+id/italy2"
+                android:layout_width="0dp"
+                android:layout_height="240dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toStartOf="@id/italy3"
+                app:layout_constraintStart_toEndOf="@id/italy1"
+                app:layout_constraintTop_toTopOf="@id/italy1" />
+
+            <View
+                android:id="@+id/italy3"
+                android:layout_width="0dp"
+                android:layout_height="240dp"
+                android:background="@color/red"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/italy2"
+                app:layout_constraintTop_toTopOf="@id/italy1"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <View
+                android:id="@+id/colombia1"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/yellow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/italy1" />
+
+            <View
+                android:id="@+id/colombia2"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@color/blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/colombia1" />
+
+            <View
+                android:id="@+id/colombia3"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@color/red"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/colombia2" />
+
+            <View
+                android:id="@+id/madagascar1"
+                android:layout_width="0dp"
+                android:layout_height="240dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toStartOf="@id/madagascar2"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/colombia3" />
+
+            <View
+                android:id="@+id/madagascar2"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:background="@color/red"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toEndOf="@id/madagascar1"
+                app:layout_constraintTop_toTopOf="@id/madagascar1" />
+
+            <View
+                android:id="@+id/madagascar3"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:background="@color/green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/madagascar2"
+                app:layout_constraintTop_toBottomOf="@id/madagascar2" />
+
+            <View
+                android:id="@+id/thailand1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/red_and_black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/madagascar3" />
+
+            <View
+                android:id="@+id/thailand2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/thailand1" />
+
+            <View
+                android:id="@+id/thailand3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/thailand2" />
+
+            <View
+                android:id="@+id/thailand4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/thailand3" />
+
+            <View
+                android:id="@+id/thailand5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/red_and_black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/thailand4" />
+
+            <View
+                android:id="@+id/denmark1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/red_and_black"
+                app:layout_constraintEnd_toStartOf="@id/denmark4"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/thailand5" />
+
+            <View
+                android:id="@+id/denmark2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="@id/denmark1"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/denmark1" />
+
+            <View
+                android:id="@+id/denmark3"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:background="@color/red_and_black"
+                app:layout_constraintEnd_toEndOf="@id/denmark1"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/denmark2" />
+
+            <View
+                android:id="@+id/denmark4"
+                android:layout_width="40dp"
+                android:layout_height="240dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toStartOf="@id/denmark5"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@id/denmark1"
+                app:layout_constraintTop_toTopOf="@id/denmark1" />
+
+            <View
+                android:id="@+id/denmark5"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:background="@color/red_and_black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="3"
+                app:layout_constraintStart_toEndOf="@id/denmark4"
+                app:layout_constraintTop_toTopOf="@id/denmark1" />
+
+            <View
+                android:id="@+id/denmark6"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="3"
+                app:layout_constraintStart_toEndOf="@id/denmark4"
+                app:layout_constraintTop_toTopOf="@id/denmark2" />
+
+            <View
+                android:id="@+id/denmark7"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:background="@color/red_and_black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="3"
+                app:layout_constraintStart_toEndOf="@id/denmark4"
+                app:layout_constraintTop_toTopOf="@id/denmark3" />
+
+            <View
+                android:id="@+id/switzerland1"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/red"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/denmark7" />
+
+            <View
+                android:id="@+id/switzerland2"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:background="@color/red"
+                app:layout_constraintEnd_toStartOf="@id/switzerland3"
+                app:layout_constraintHorizontal_weight="3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/switzerland1" />
+
+            <View
+                android:id="@+id/switzerland3"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toStartOf="@id/switzerland5"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@id/switzerland2"
+                app:layout_constraintTop_toTopOf="@id/switzerland2" />
+
+            <View
+                android:id="@+id/switzerland5"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:background="@color/red"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="3"
+                app:layout_constraintStart_toEndOf="@id/switzerland3"
+                app:layout_constraintTop_toTopOf="@id/switzerland2" />
+
+            <View
+                android:id="@+id/switzerland6"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:background="@color/red"
+                app:layout_constraintEnd_toStartOf="@id/switzerland7"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/switzerland2" />
+
+            <View
+                android:id="@+id/switzerland7"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toStartOf="@id/switzerland8"
+                app:layout_constraintHorizontal_weight="3"
+                app:layout_constraintStart_toEndOf="@id/switzerland6"
+                app:layout_constraintTop_toTopOf="@id/switzerland6" />
+
+            <View
+                android:id="@+id/switzerland8"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:background="@color/red"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toEndOf="@id/switzerland7"
+                app:layout_constraintTop_toTopOf="@id/switzerland6" />
+
+            <View
+                android:id="@+id/switzerland9"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:background="@color/red"
+                app:layout_constraintEnd_toStartOf="@id/switzerland10"
+                app:layout_constraintHorizontal_weight="3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/switzerland6" />
+
+            <View
+                android:id="@+id/switzerland10"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toStartOf="@id/switzerland11"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@id/switzerland9"
+                app:layout_constraintTop_toTopOf="@id/switzerland9" />
+
+            <View
+                android:id="@+id/switzerland11"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:background="@color/red"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="3"
+                app:layout_constraintStart_toEndOf="@id/switzerland10"
+                app:layout_constraintTop_toTopOf="@id/switzerland9" />
+
+            <View
+                android:id="@+id/switzerland12"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/red"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/switzerland9" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button_to_second_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/white"
+        app:backgroundTint="@color/white"
+        app:srcCompat="@drawable/ic_baseline_add_to_photos"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="332dp"
+        tools:layout_editor_absoluteY="654dp"
+        android:contentDescription="TODO"
+        app:fabSize="normal"
+        app:elevation="6dp"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
